@@ -1,0 +1,29 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: "Exo 2", sans-serif;
+}
+
+a {
+   text-decoration: none;
+}
+
+.container {
+   max-width: 1240px;
+   margin: 0 auto;
+   padding: 0 16px;
+   box-sizing: content-box;
+}
+@import "./fonts";
+@import "./hero";
+@import "./statistic";
+@import "./about";
+@import "./vacancy";
+@import "./client";
+@import "./delivery";
+@import "./brands";
+@import "./company";
+@import "./contact";
+@import "./video";
+@import "./footer";

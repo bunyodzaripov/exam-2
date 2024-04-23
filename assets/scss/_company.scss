@@ -1,0 +1,96 @@
+.company__wrapper {
+   margin: 130px 0;
+}
+
+.company__title {
+   font-size: 48px;
+   font-weight: 600;
+   color: #363738;
+   margin-bottom: 72px;
+}
+
+.company__cards {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 24px 30px;
+}
+
+.company__card {
+   // overflow: hidden;
+   position: relative;
+   display: flex;
+   align-items: center;
+   gap: 0 40px;
+   box-shadow: 0px 4px 15px 0px #00000026;
+   border-radius: 10px;
+   padding: 35px 0;
+   padding-left: 70px;
+   h3 {
+      font-size: 20px;
+      font-weight: 600;
+      color: #363738;
+   }
+   p {
+      margin-top: 12px;
+      margin-bottom: 14px;
+      color: #6b6b6c;
+      font-family: "PT Sans", sans-serif;
+   }
+   .company-line {
+      border-bottom: 3px solid #ffce50;
+      width: 86px;
+      height: 1px;
+      margin-bottom: 32px;
+   }
+}
+
+.company__social {
+   display: flex;
+   align-items: center;
+   gap: 0 20px;
+}
+
+.company-left {
+   border-top-left-radius: 10px;
+   border-bottom-left-radius: 10px;
+   position: absolute;
+   background-color: #0b7572;
+   height: 100%;
+   width: 51px;
+   left: 0;
+}
+
+@media only screen and (max-width: 1025px) {
+   .company__card {
+      padding: 30px 0;
+      padding-left: 50px;
+   }
+   .company-left {
+      width: 30px;
+      height: 100%;
+   }
+}
+@media only screen and (max-width: 769px) {
+   .company__cards {
+      grid-template-columns: repeat(1, 1fr);
+   }
+}
+@media only screen and (max-width: 481px) {
+   .company__title {
+      font-size: 28px;
+   }
+   .company__card {
+      gap: 0 10px;
+      padding: 20px 0;
+      padding-left: 40px;
+   }
+}
+@media only screen and (max-width: 320px) {
+   .company__card {
+      max-width: 320px;
+      padding: 15px;
+   }
+   .company-left {
+      display: none;
+   }
+}

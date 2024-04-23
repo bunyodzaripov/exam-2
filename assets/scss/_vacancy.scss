@@ -1,0 +1,83 @@
+.vacancy__wrapper {
+   margin-bottom: 212px;
+}
+.vacancy__wrapper {
+   text-align: center;
+}
+
+.vacancy__title {
+   font-size: 48px;
+   font-weight: 600;
+   color: #363738;
+}
+
+.vacancy__text {
+   color: #6b6b6c;
+   margin-top: 32px;
+   margin-bottom: 56px;
+   font-family: "PT Sans", sans-serif;
+}
+
+.vacancy__cards {
+   display: flex;
+   gap: 0 30px;
+   .vacancy__card {
+      max-width: 393px;
+      box-shadow: 0px 4px 15px 0px #0000001f;
+      border-radius: 10px;
+   }
+}
+.vacancy__card {
+   img {
+      width: 100%;
+      object-fit: cover;
+   }
+}
+.vacancy__card-body {
+   padding: 24px 32px;
+   h3 {
+      font-size: 20px;
+      font-weight: 600;
+      color: #363738;
+      margin-bottom: 16px;
+   }
+   p {
+      margin-bottom: 32px;
+      color: #6b6b6c;
+      font-family: "PT Sans", sans-serif;
+   }
+   strong {
+      color: #363738;
+      font-weight: 600;
+      padding-bottom: 5px;
+      border-bottom: 3px solid #ffce50;
+      transition: 0.7s;
+      cursor: pointer;
+      &:hover {
+         background-color: #ffce50;
+         color: #0b7572;
+      }
+   }
+}
+@media only screen and (max-width: 1025px) {
+   .vacancy__cards {
+      flex-direction: column;
+      gap: 30px 0;
+      align-items: center;
+   }
+   .vacancy__cards {
+      .vacancy__card {
+         width: 590px;
+         width: 100%;
+      }
+   }
+}
+
+@media only screen and (max-width: 481px) {
+   .vacancy__title {
+      font-size: 25px;
+   }
+   .vacancy__text {
+      font-size: 15px;
+   }
+}

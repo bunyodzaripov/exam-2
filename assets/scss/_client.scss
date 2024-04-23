@@ -1,0 +1,98 @@
+.client__wrapper {
+   background-color: #0b7572;
+   display: flex;
+   justify-content: center;
+   padding: 85px 66px;
+   gap: 0 30px;
+   margin-bottom: 120px;
+   h2 {
+      font-size: 48px;
+      font-weight: 600;
+      color: #fff;
+   }
+}
+
+.client__content {
+   width: 100%;
+   background-color: #fff;
+   border-radius: 8px;
+   padding: 28px 41px;
+   .client__logo {
+      gap: 194px;
+      display: flex;
+      padding-bottom: 32px;
+      border-bottom: 1px solid #d7d7dd;
+      margin-bottom: 32px;
+      p {
+         color: #6b6b6c;
+         font-size: 11px;
+         line-height: 17px;
+         font-family: "PT Sans", sans-serif;
+      }
+   }
+}
+
+table {
+   border-collapse: collapse;
+   th {
+      border: 1px solid #00000033;
+      background-color: #0b7572;
+      color: white;
+      font-size: 16px;
+      font-weight: 600;
+      padding: 36px;
+   }
+   td {
+      font-family: "PT Sans", sans-serif;
+      padding: 20px;
+      font-size: 14px;
+      border: 1px solid #00000033;
+      &:nth-child(2) {
+         color: #6b6b6c;
+         display: flex;
+
+         flex-direction: column;
+         gap: 10px 0;
+         line-height: 19px;
+         strong {
+            color: #363738;
+            font-weight: 600;
+            font-family: "Exo 2", sans-serif;
+         }
+      }
+      &:nth-child(3) {
+         color: #6b6b6c;
+         font-family: "PT Sans", sans-serif;
+         strong {
+            display: block;
+            font-family: "PT Sans", sans-serif;
+            font-weight: 700;
+            color: #363738;
+            margin-bottom: 12px;
+         }
+         .table-rating {
+            margin-top: 12px;
+         }
+      }
+      &:nth-child(4) {
+         color: #6b6b6c;
+         gap: 10px 0;
+         strong {
+            display: block;
+            font-weight: 700;
+            color: #363738;
+            margin-bottom: 12px;
+         }
+         span {
+            margin-top: 10px;
+            display: block;
+            color: #363738;
+         }
+      }
+   }
+}
+@media only screen and (max-width: 1201px) {
+   #client {
+      display: none;
+   }
+}

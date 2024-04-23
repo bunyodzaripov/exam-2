@@ -1,0 +1,128 @@
+.hero__wrapper {
+   display: flex;
+   gap: 0 80px;
+   align-items: center;
+   padding-top: 109px;
+   padding-bottom: 67px;
+   .hero__title {
+      font-size: 52px;
+      font-weight: 600;
+      color: #363738;
+      margin-bottom: 40px;
+   }
+   .hero__text {
+      font-size: 16px;
+      font-weight: 400;
+      color: #6b6b6c;
+      line-height: 24px;
+      margin-bottom: 40px;
+      font-family: "PT Sans", sans-serif;
+   }
+   .hero__link {
+      font-family: "PT Sans", sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+      color: #363738;
+      padding-bottom: 5px;
+      border-bottom: 3px solid #ffce50;
+      transition: 0.7s;
+      cursor: pointer;
+      &:hover {
+         background-color: #ffce50;
+         color: #0b7572;
+      }
+   }
+}
+
+.hero__content {
+   max-width: 610px;
+}
+
+.hero__img {
+   img {
+      object-fit: contain;
+   }
+}
+
+@media only screen and (max-width: 1201px) {
+   .hero__wrapper {
+      gap: 0 50px;
+   }
+   .hero__wrapper {
+      .hero__title {
+         font-size: 44px;
+      }
+   }
+
+   .hero__content {
+      max-width: 510px;
+   }
+   .hero__img {
+      img {
+         object-fit: cover;
+         width: 100%;
+      }
+   }
+}
+@media only screen and (max-width: 1025px) {
+   .hero__wrapper {
+      flex-wrap: wrap;
+      text-align: center;
+      justify-content: center;
+      gap: 49px 0;
+   }
+   .hero__img {
+      overflow: hidden;
+      border-radius: 20px;
+      margin-top: 30px;
+      width: 790px;
+
+      img {
+         width: 100%;
+         object-fit: cover;
+      }
+   }
+   .hero__content {
+      max-width: 790px;
+      width: 100%;
+   }
+}
+@media only screen and (max-width: 769px) {
+   .hero__wrapper {
+      .hero__title {
+         font-size: 30px;
+      }
+   }
+   .hero__img {
+      width: 590px;
+      img {
+         width: 100%;
+         object-fit: contain;
+      }
+   }
+}
+@media only screen and (max-width: 481px) {
+   .hero__wrapper {
+      flex-wrap: wrap;
+      text-align: start;
+      justify-content: start;
+      gap: 32px 0;
+   }
+
+   .hero__content {
+      align-items: start;
+   }
+   .hero__wrapper {
+      .hero__title {
+         font-size: 28px;
+      }
+   }
+}
+@media only screen and (max-width: 320px) {
+   .hero__img {
+      display: none;
+   }
+   .hero__content {
+      text-align: center;
+   }
+}
